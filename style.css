@@ -1,0 +1,285 @@
+@font-face {
+    font-family: 'kumbh r';
+    src: url(../fonts/KumbhSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'kumbh l';
+    src: url(../fonts/KumbhSans-Light.ttf);
+}
+
+@font-face {
+    font-family: 'kumbh b';
+    src: url(../fonts/KumbhSans-Bold.ttf);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    min-height: 110vh;
+    color: hsl(238, 29%, 16%);
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-size: 1.6rem;
+}
+
+.card {
+    max-width: 98%;
+    width: 950px;
+    height: 510px;
+    background-color: white;
+    margin-top: -4%;
+    border-radius: 23px;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+}
+
+.faq {
+    width: 50%;
+    margin-top: 7%;
+    margin-right: 8%;
+    margin-left: 10%;
+}
+
+.img {
+    width: 50%;
+    position: relative;
+
+}
+
+
+.img::before {
+    content: url('./images/illustration-woman-online-desktop.svg');
+    position: absolute;
+    top: 17%;
+    left: -20%;
+}
+
+.box {
+    position: relative;
+    top: 45%;
+    left: -47%;
+}
+
+@keyframes upndown {
+    from {
+        margin-top: 170px;
+    }
+
+    to {
+        margin-top: 150px;
+    }
+}
+
+.card::after {
+    animation: upndown 1.6s infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    content: url('./images/illustration-box-desktop.svg');
+    position: absolute;
+    left: -10%;
+    overflow: visible;
+
+}
+
+
+.title {
+    font-size: 3.3rem;
+    font-family: 'kumbh b';
+    color: hsl(238, 29%, 16%);
+}
+
+.question {
+    font-size: 1.4rem;
+    font-family: 'kumbh r';
+    color: hsl(233, 8%, 21%);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.5%;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-family: 'kumbh r';
+    color: hsl(240, 6%, 50%);
+    margin-top: 2%;
+    width: 80%;
+    font-weight: 100;
+    line-height: 2.0rem;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes active {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.active {
+    animation: active 0.4s;
+    display: initial;
+    margin-top: 50%;
+}
+
+.questionActive {
+    font-size: 1.4rem;
+    font-family: 'kumbh b';
+    color: hsl(233, 8%, 21%);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.5%;
+}
+
+hr {
+    width: auto;
+    margin-bottom: 4%;
+    opacity: 0.3;
+
+}
+
+.arrow {
+    cursor: pointer;
+    width: 1.0rem;
+    height: 0.7rem;
+}
+
+p:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+
+@media (max-width: 1023px) {
+
+    .card {
+        max-width: 85%;
+        width: 900px;
+        height: 470px;
+        margin-left: 20%;
+        margin-right: 20%;
+        flex-direction: column;
+        margin-top: 13%;
+    }
+
+    .img::before {
+        position: absolute;
+        content: url('./images/illustration-woman-online-desktop.svg');
+        width: 80%;
+        height: 166px;
+        top: -100px;
+        left: 35%;
+        margin-left: 25%;
+        margin-right: 20%;
+        transform: scale(0.5);
+        overflow: visible;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+    .card::after {
+        display: none;
+    }
+
+    .box {
+        position: relative;
+        left: -47%;
+    }
+
+
+    .title {
+        font-size: 3rem;
+        font-family: 'kumbh b';
+        color: hsl(238, 29%, 16%);
+        text-align: center;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    .question {
+        font-size: 1.2rem;
+        font-family: 'kumbh r';
+        color: hsl(233, 8%, 21%);
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1%;
+        margin-top: 3%;
+    }
+
+    .active {
+        animation: active 0.4s;
+        display: initial;
+        margin-top: 50%;
+        font-size: 1.2rem;
+    }
+
+    .questionActive {
+        font-size: 1.2rem;
+        font-family: 'kumbh b';
+        color: hsl(233, 8%, 21%);
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1.5%;
+    }
+
+    .faq {
+        margin-top: 11%;
+        width: 80%;
+        height: 500px;
+    }
+
+
+    hr {
+        width: auto;
+        margin-bottom: 1%;
+        opacity: 0.3;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .faq {
+        margin-top: 90px;
+        width: 80%;
+        height: 500px;
+    }
+
+}
+
+.atribuition{
+    margin-top:3%;
+    font-size: 1.2rem;
+    font-family: 'kumbh r';
+    color: hsl(233, 8%, 21%);
+}

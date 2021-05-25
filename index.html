@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel=stylesheet href="./style.css">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <div class='card' style="overflow:visible ;display: flex;">
+    <div class="img"></div>
+
+    <div class="faq">
+      <h1 class="title">FAQ</h1>
+      <br>
+      <br>
+      <p onclick="showAnswer('content','question')" id='question' class="question"> How many team members can I invite?
+        <img class="arrow" src="../images/icon-arrow-down.svg"></img></p>
+      <h2 class="hidden" id="content">You can invite up to 2 additional users on the Free plan. There is no limit on
+        team members for the Premium plan.</h2>
+      <br>
+      <hr>
+      <p onclick="showAnswer('content2','question2')" id='question2' class="question">What is the maximum file upload
+        size? <img class="arrow" src="../images/icon-arrow-down.svg">
+      </p>
+      <h2 class="hidden" id="content2">No more than 2GB. All files in your account must fit your allotted storage space.
+      </h2>
+      <br>
+      <hr>
+      <p onclick="showAnswer('content3','question3')" id='question3' class="question">How do I reset my password? <img
+          class="arrow" id="pass" src="../images/icon-arrow-down.svg"></p>
+      <h2 class="hidden" id="content3">Click “Forgot password” from the login page or “Change password” from your
+        profile page.
+        A reset link will be emailed to you.</h2>
+      <br>
+      <hr>
+      <p onclick="showAnswer('content4','question4')" id='question4' class="question">Can I cancel my subscription? <img
+          class="arrow" id="can" src="../images/icon-arrow-down.svg"></p>
+      <h2 class="hidden" id="content4">Yes! Send us a message and we’ll process your request no questions asked.</h2>
+      <br>
+      <hr>
+      <p onclick="showAnswer('content5','question5')" id='question5' class="question">Do you provide additional support?
+        <img class="arrow" id="do" src="../images/icon-arrow-down.svg"></p>
+      <h2 class="hidden" id="content5">Chat and email support is available 24/7. Phone lines are open during normal
+        business hours.</h2>
+      <br>
+      <hr>
+    </div>
+  </div>
+  <footer class="atribuition">
+        Challenge by
+        <a href="https://www.frontendmentor.io/challenges" target="_blank">
+            Frontend Mentor.</a>
+        Coded by
+        <a href="https://github.com/svtoria">Sara Vitoria.</a>
+  </footer>
+</body>
+<script src="./script.js"></script>
+
+</html>
