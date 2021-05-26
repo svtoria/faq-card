@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'kumbh r';
-    src: url(./fonts/KumbhSans-Regular.ttf);
+    src: url(../fonts/KumbhSans-Regular.ttf);
 }
 
 @font-face {
     font-family: 'kumbh l';
-    src: url(./fonts/KumbhSans-Light.ttf);
+    src: url(../fonts/KumbhSans-Light.ttf);
 }
 
 @font-face {
     font-family: 'kumbh b';
-    src: url(./fonts/KumbhSans-Bold.ttf);
+    src: url(../fonts/KumbhSans-Bold.ttf);
 }
 
 html {
@@ -38,8 +38,9 @@ body {
 
 .card {
     max-width: 98%;
+    min-height: 500px;
     width: 950px;
-    height: 510px;
+    height: 100%;
     background-color: white;
     margin-top: -4%;
     border-radius: 23px;
@@ -177,12 +178,13 @@ p:hover {
 
     .card {
         max-width: 85%;
+        min-height: 450px;
         width: 900px;
-        height: 470px;
+        height: 100%;
         margin-left: 20%;
         margin-right: 20%;
         flex-direction: column;
-        margin-top: 13%;
+        margin-top: 10%;
     }
 
     .img::before {
@@ -219,7 +221,7 @@ p:hover {
         color: hsl(238, 29%, 16%);
         text-align: center;
         flex-direction: row;
-        margin-top: 10px;
+        margin-top: -100px;
     }
 
     .question {
@@ -253,9 +255,9 @@ p:hover {
     }
 
     .faq {
-        margin-top: 11%;
+        margin-top: -100px;
         width: 80%;
-        height: 500px;
+        height: 100%;
     }
 
 
@@ -270,11 +272,21 @@ p:hover {
 @media (max-width: 700px) {
 
     .faq {
-        margin-top: 90px;
+        margin-top: 200px;
         width: 80%;
-        height: 500px;
+        height: 100%;
     }
 
+    .card {
+        max-width: 85%;
+        min-height: 200px;
+        width: 900px;
+        height: 100%;
+        margin-left: 20%;
+        margin-right: 20%;
+        flex-direction: column;
+        margin-top: 60px;
+    }
 }
 
 .atribuition{
