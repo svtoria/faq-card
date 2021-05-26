@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'kumbh r';
-    src: url(../fonts/KumbhSans-Regular.ttf);
+    src: url(./fonts/KumbhSans-Regular.ttf);
 }
 
 @font-face {
     font-family: 'kumbh l';
-    src: url(../fonts/KumbhSans-Light.ttf);
+    src: url(./fonts/KumbhSans-Light.ttf);
 }
 
 @font-face {
     font-family: 'kumbh b';
-    src: url(../fonts/KumbhSans-Bold.ttf);
+    src: url(./fonts/KumbhSans-Bold.ttf);
 }
 
 html {
