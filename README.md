@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot Web](./images/print.png)
+![Screenshot Web](./design/desktop-design.jpg)
 
 ### Links
 
