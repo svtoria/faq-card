@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://www.frontendmentor.io/solutions/faq-accordion-card-solution-iHGJf0VgS)
-- Live Site URL: (https://svtoria.github.io/faq-card/)
+- Solution URL: https://www.frontendmentor.io/solutions/faq-accordion-card-solution-iHGJf0VgS
+- Live Site URL: https://svtoria.github.io/faq-card/
 
 ## My process
 
